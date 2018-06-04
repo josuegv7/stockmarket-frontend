@@ -1,4 +1,3 @@
-import '../style/Queries.css';
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Navbar from './Navbar';

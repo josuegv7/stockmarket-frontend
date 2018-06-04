@@ -60,7 +60,7 @@ header{
 
 .hero_text_box{
   position: absolute;
-  width: 1140px;
+  width: 20%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -77,10 +77,10 @@ header{
 }
 
 .logo{
-  width: 6%;
+  width: 4%;
   height: auto;
   float: left;
-  margin-top: 20px;
+  margin: 6%;
 }
 .main_nav{
   float: right;

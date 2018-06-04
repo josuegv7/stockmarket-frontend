@@ -1,5 +1,5 @@
 import Axios from 'axios';
-import { FETCH_STOCK, FETCH_MYSTOCK, FETCH_DETAIL_STOCK} from './types';
+import { FETCH_STOCK, FETCH_MYSTOCK} from './types';
 
 
 export function fetchStock(company){

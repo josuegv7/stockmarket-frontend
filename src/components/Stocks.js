@@ -24,12 +24,11 @@ class Stocks extends Component {
   };
   renderMyStocks(){
     return _.map(this.props.MyStocks, myStocks => {
-      const symbols = Object.getOwnPropertyNames(this.props.MyStocks)
+      // const symbols = Object.getOwnPropertyNames(this.props.MyStocks)
       const price = myStocks.map(price => price.open.toFixed(2)).reverse().slice(0,5);
       const date = myStocks.map(price => price.date).reverse().slice(0,5);
       const high = myStocks.map(price => price.high.toFixed(2)).reverse().slice(0,5)
       const low = myStocks.map(price => price.low.toFixed(2)).reverse().slice(0,5)
-      const close = myStocks.map(price => price.close.toFixed(2)).reverse().slice(0,5)
       const volume = myStocks.map(price => price.volume.toFixed(2)).reverse().slice(0,5)
       const change = myStocks.map(price => price.change.toFixed(2)).reverse().slice(0,5)
       var graph = [];
@@ -95,7 +94,7 @@ class Stocks extends Component {
 
       const { open } = this.state;
       return(
-          <div className='col' >
+          <div className='col'>
               <Chart data={[graph]}/>
               <JsonTable rows={graph} columns={columns} header='false' className="table table-dark table-sm text-center"/>
               <button onClick={this.onOpenModal} className="btn btn-info">More Info</button>
